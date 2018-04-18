@@ -1,0 +1,29 @@
+
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+img{
+	max-width: 100%;
+	margin-bottom: 10px;
+}
+.nav-brand-img{
+	max-width:80px; 
+	max-height:50px;
+}
+.news-content{
+	margin-top: 30px;
+}
+@media screen and (min-width: 600px){
+	.news-text-section{
+	padding-left: 100px;
+}
+.nav-brand-img{
+	max-width:100px; 
+	max-height:80px;
+}
+}
