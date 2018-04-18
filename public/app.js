@@ -102,14 +102,16 @@ function loadPosts(data) {
                         <a href="${news.url}" target="_blank" class="btn btn-primary" role="button">View</a>
                     </p>
                 </div>
+                <hr>
             </div>`).join("");
 
             $('.col-sm-12').html(toadd);
+            console.log(typeof(news.publishedAt));
     
 }
 
 function showCachedNews() {
-    console.log('cached messages');
+    console.log('cached messages Loaded');
     dbPromise.then(function(db) {
         var index = db.transaction('newss')
             .objectStore('newss').index('by-date');
